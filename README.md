@@ -18,18 +18,21 @@ From your repo root:
 
 ```bash
 npm create vite@latest . -- --template vue
+```
+
+```bash
 npm install
 ```
 
-When prompted about the folder not being empty, answer **YES**.
+When prompted about the folder not being empty, answer **│Remove existing files and continue**.
 
 This creates:
 
-- `index.html`
-- `src/main.js`
-- `src/App.vue`
-- `vite.config.js`
-- `package.json`
+- index.html
+- src/main.js
+- src/App.vue
+- vite.config.js
+- package.json
 
 Your repo is now a Vue project.
 
@@ -55,22 +58,12 @@ Install:
 npm install tailwindcss @tailwindcss/vite
 ```
 
-Create `src/style.css`:
+In `src/style.css`:
 
 ```css
 @import "tailwindcss";
 
 /* your custom styles below */
-```
-
-Import it in `src/main.js`:
-
-```js
-import { createApp } from 'vue'
-import App from './App.vue'
-import './style.css'
-
-createApp(App).mount('#app')
 ```
 
 Restart dev server:

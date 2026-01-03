@@ -12,6 +12,10 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+
+  <div class="bg-black text-white p-6">
+    Tailwind is working
+  </div>
 </template>
 
 <style scoped>
