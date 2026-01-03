@@ -173,7 +173,8 @@ Update `package.json` scripts:
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "vite build && gh-pages -d dist -b gh-pages"
+    "deploy": "vite build && gh-pages -d dist -b gh-pages",
+    "preview": "vite preview"
   }
 }
 ```
