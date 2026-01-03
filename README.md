@@ -185,7 +185,7 @@ Deploy:
 npm run deploy
 ```
 
-You do **not** need to run `npm run build` separately.
+You don't need to run `npm run build` separately.
 
 ---
 
@@ -209,6 +209,11 @@ Every update follows this flow:
 
 ```bash
 npm run dev
+```
+
+Fix stuff.
+
+```
 npm run deploy
 ```
 
@@ -222,8 +227,5 @@ If your site loads as a blank page:
 
 - Your `base` value in `vite.config.js` is wrong
 
-Fix it, redeploy, and move on.
 
 ---
-
-Build the site. Ship it. Stop rereading the guide.
