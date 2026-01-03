@@ -84,9 +84,7 @@ Test Tailwind in `App.vue`:
 
 ---
 
-## 4. Add Vue DevTools Plugin (Optional but Recommended)
-
-Install:
+## 4. Add Vue DevTools plugin
 
 ```bash
 npm install -D vite-plugin-vue-devtools
