@@ -227,5 +227,4 @@ If your site loads as a blank page:
 
 - Your `base` value in `vite.config.js` is wrong
 
-
 ---
