@@ -117,6 +117,15 @@ Create a `tailwind.json` file in `.vscode/`
 }
 ```
 
+Add this in `.gitignore`
+
+```js
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tailwind.json
+```
+
 ---
 
 ## 5. Add Vue DevTools plugin
