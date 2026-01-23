@@ -82,9 +82,44 @@ Test Tailwind in `App.vue`:
 </template>
 ```
 
+## 4. Fix Unknown at rule @applycss(unknownAtRules)
+
+Create a `settings.json` file in `.vscode/`
+
+```js
+// .vscode/settings.json
+{
+"css.customData": [".vscode/tailwind.json"],
+"scss.customData": [".vscode/tailwind.json"]
+}
+```
+
+Create a `tailwind.json` file in `.vscode/`
+
+```js
+// .vscode/tailwind.json
+{
+ "version": 1.1,
+ "atDirectives": [
+   {
+     "name": "@apply",
+     "description": "Use the `@apply` directive to inline existing Tailwind utility classes."
+   },
+   {
+     "name": "@theme",
+     "description": "Define custom design tokens like colors and fonts."
+   },
+   {
+     "name": "@layer",
+     "description": "Assign custom styles to base, components, or utilities layers."
+   }
+ ]
+}
+```
+
 ---
 
-## 4. Add Vue DevTools plugin
+## 5. Add Vue DevTools plugin
 
 ```bash
 npm install -D vite-plugin-vue-devtools
@@ -92,7 +127,7 @@ npm install -D vite-plugin-vue-devtools
 
 ---
 
-## 5. Set the Base Path (Critical for GitHub Pages)
+## 6. Set the Base Path (Critical for GitHub Pages)
 
 This is where most deployments fail.
 
@@ -134,7 +169,7 @@ export default defineConfig({
 
 ---
 
-## 6. Refactor Portfolio Structure
+## 7. Refactor Portfolio Structure
 
 Recommended structure:
 
@@ -158,7 +193,7 @@ src/
 
 ---
 
-## 7. Deploy to GitHub Pages Using `gh-pages`
+## 8. Deploy to GitHub Pages Using `gh-pages`
 
 Install:
 
@@ -189,7 +224,7 @@ You don't need to run `npm run build` separately.
 
 ---
 
-## 8. Configure GitHub Pages
+## 9. Configure GitHub Pages
 
 On GitHub:
 
@@ -203,7 +238,7 @@ Save and wait a minute.
 
 ---
 
-## 9. Update Workflow (From Now On)
+## 10. Update Workflow (From Now On)
 
 Every update follows this flow:
 
